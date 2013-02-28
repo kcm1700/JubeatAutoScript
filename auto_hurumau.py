@@ -5,6 +5,7 @@ from BeautifulSoup import BeautifulSoup
 cookie = raw_input('input konmai cookie: ')
 opener = urllib2.build_opener()
 opener.addheaders.append(('Cookie', cookie))
+opener.addheaders.append(('Host', 'p.eagate.573.jp'))
 
 while True:
 	try:
