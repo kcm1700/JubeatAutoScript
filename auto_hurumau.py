@@ -29,7 +29,7 @@ while True:
 			req = urllib2.Request(newurl, data)
 			response = urllib2.urlopen(req)
 			response.read()
-		time.sleep(60)
+		time.sleep(150)
 	except Exception, e:
 		print sys.exc_info()[0], e
-		time.sleep(240)
+		time.sleep(150)
