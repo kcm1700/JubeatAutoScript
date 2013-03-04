@@ -12,7 +12,7 @@ while True:
 	try:
 		page = opener.open('http://p.eagate.573.jp/game/bemani/cafedetran/p/index.html?c=1')
 		time.sleep(10)
-		opener.open('http://p.eagate.573.jp/game/bemani/cafedetran/p/get.html')
+		opener.open('http://p.eagate.573.jp/game/bemani/cafedetran/p/get.html?c=1')
 		soup = BeautifulSoup(page)
 		hurumau_part = soup.find(id="action_btn_container")
 		print hurumau_part
